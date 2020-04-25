@@ -10,7 +10,6 @@ function setup()
   poseNet=ml5.poseNet(video,modelLoad);
   poseNet.on('pose',getPoses);
 }
-
 function modelLoad()
 {
   console.log('pose net model is ready');
