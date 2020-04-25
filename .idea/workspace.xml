@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="59227322-d5b1-4ddd-a39d-b32731f6adaa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/eww.php" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1b1kXMDKFNNeTEtz41iqAIAsHSk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59227322-d5b1-4ddd-a39d-b32731f6adaa" name="Default Changelist" comment="" />
+      <created>1587807025838</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587807025838</updated>
+      <workItem from="1587807027088" duration="270000" />
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1587807137835</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587807137835</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="218" y="23" key="CommitChangelistDialog2" timestamp="1587807137598">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state x="218" y="23" key="CommitChangelistDialog2/0.23.1280.709@0.23.1280.709" timestamp="1587807137598" />
+    <state x="463" y="308" key="NewPhpFileDialog" timestamp="1587807109533">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state x="463" y="308" key="NewPhpFileDialog/0.23.1280.709@0.23.1280.709" timestamp="1587807109533" />
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2" timestamp="1587807139476">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2/0.23.1280.709@0.23.1280.709" timestamp="1587807139476" />
+    <state x="418" y="273" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1587807085191">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state x="418" y="273" key="git4idea.remote.GitConfigureRemotesDialog/0.23.1280.709@0.23.1280.709" timestamp="1587807085191" />
+  </component>
+</project>
