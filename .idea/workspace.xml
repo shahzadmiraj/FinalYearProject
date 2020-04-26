@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59227322-d5b1-4ddd-a39d-b32731f6adaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TrainYourOwnNeuralNetwork/RawData/mouseNotes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainYourOwnNeuralNetwork/model/model.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainYourOwnNeuralNetwork/model/model.weights.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainYourOwnNeuralNetwork/model/model_meta.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrainYourOwnNeuralNetwork/TrainModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/TrainYourOwnNeuralNetwork/TrainModel.js" afterDir="false" />
     </list>
@@ -88,7 +90,8 @@
       <workItem from="1587807027088" duration="270000" />
       <workItem from="1587807387968" duration="8947000" />
       <workItem from="1587880623227" duration="1660000" />
-      <workItem from="1587886100030" duration="1087000" />
+      <workItem from="1587886100030" duration="2247000" />
+      <workItem from="1587893981649" duration="293000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1587807137835</created>
@@ -118,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587835289443</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="save data of training model by using mouse">
+      <created>1587887272529</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587887272529</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +139,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="got points by using pose net" />
     <MESSAGE value="learning of training model by using mouse" />
-    <option name="LAST_COMMIT_MESSAGE" value="learning of training model by using mouse" />
+    <MESSAGE value="save data of training model by using mouse" />
+    <option name="LAST_COMMIT_MESSAGE" value="save data of training model by using mouse" />
   </component>
   <component name="WindowStateProjectService">
     <state x="280" y="39" key="#CLI_Interpreters" timestamp="1587829114019">
@@ -168,10 +179,10 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="398" y="79" key="#index.php/0.23.1280.709@0.23.1280.709" timestamp="1587829074558" />
-    <state x="218" y="23" key="CommitChangelistDialog2" timestamp="1587835289145">
+    <state x="218" y="23" key="CommitChangelistDialog2" timestamp="1587887272317">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="218" y="23" key="CommitChangelistDialog2/0.23.1280.709@0.23.1280.709" timestamp="1587835289145" />
+    <state x="218" y="23" key="CommitChangelistDialog2/0.23.1280.709@0.23.1280.709" timestamp="1587887272317" />
     <state width="1238" height="108" key="GridCell.Tab.0.bottom" timestamp="1587829570515">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
@@ -200,10 +211,10 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="149" y="23" width="982" height="709" key="SettingsEditor/0.23.1280.709@0.23.1280.709" timestamp="1587826451231" />
-    <state x="240" y="117" key="Vcs.Push.Dialog.v2" timestamp="1587835291176">
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2" timestamp="1587887274379">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="240" y="117" key="Vcs.Push.Dialog.v2/0.23.1280.709@0.23.1280.709" timestamp="1587835291176" />
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2/0.23.1280.709@0.23.1280.709" timestamp="1587887274379" />
     <state x="512" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587829164567">
       <screen x="0" y="23" width="1280" height="709" />
     </state>

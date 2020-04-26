@@ -16,9 +16,24 @@ function setup()
         learningRate: 0.9, //may be more improve error try it is depend
     };
 model=ml5.neuralNetwork(options);
-model.loadData('RawData/mouseNotes.json',dataLoaded); //load model from RawData/mouseNotes.json
-background(255);
+//model.loadData('RawData/mouseNotes.json',dataLoaded); //load model from RawData/mouseNotes.json
+
+    const modelDetails = {
+        model: 'model/model.json',
+        metadata: 'model/model_meta.json',
+        weights: 'model/model.weights.bin'
+    }
+    model.load(modelDetails, modelLoaded)
+
+    background(255);
 }
+
+function modelLoaded()
+{
+    console.log("model is ready");
+    state='prediction';
+}
+
 
 function dataLoaded()
 {
@@ -54,6 +69,10 @@ function keyPressed()
     else if(key=='s')
     {
         model.saveData('mouseNotes'); //when s key is press data will be save in dowloads folder
+    }
+    else if(key=='m')
+    {
+        model.save(); //when press m then create a model and save in dowload folder
     }
     else
     {
