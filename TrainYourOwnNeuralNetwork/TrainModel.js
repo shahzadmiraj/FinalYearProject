@@ -2,36 +2,44 @@ let model;
 let targetLabel='C';
 let trainingData=[]
 let state='collection';
-let notes = {
-    C: 261.6256,
-    D: 293.6648,
-    E: 329.6276
-};
-let env, wave;
+
 function setup()
 {
     createCanvas(900,500);
 
-    env = new p5.Envelope();
-    env.setADSR(0.05, 0.1, 0.5, 1);
-    env.setRange(1.2, 0);
-
-    wave = new p5.Oscillator();
-
-    wave.setType('sine');
-    wave.start();
-    wave.freq(440);
-    wave.amp(env);
 
     let options={
         inputs:['x','y'],
         outputs:['label'],
         task:'classification',
-        debug:true
+        debug:true,
+        learningRate: 0.9, //may be more improve error try it is depend
     };
 model=ml5.neuralNetwork(options);
+model.loadData('RawData/mouseNotes.json',dataLoaded); //load model from RawData/mouseNotes.json
 background(255);
 }
+
+function dataLoaded()
+{
+    console.log(model.data);
+    let data=model.data.data.raw;
+    //let data=model.getData()
+    for(let i=0;i<data.length;i++)
+    {
+        let inputs=data[i].xs; //input coodinates from loaded data
+        let target=data[i].ys; //output target from loaded data
+        stroke(0);
+        noFill();
+        ellipse(inputs.x, inputs.y, 24);
+        fill(0);
+        noStroke();
+        textAlign(CENTER, CENTER);
+        text(target.label, inputs.x, inputs.y);
+    }
+
+}
+
 function keyPressed()
 {
     if(key=='t')
@@ -42,6 +50,10 @@ function keyPressed()
             epochs:100
         }
         model.train(option,whileTraining,finishedTraining);
+    }
+    else if(key=='s')
+    {
+        model.saveData('mouseNotes'); //when s key is press data will be save in dowloads folder
     }
     else
     {
@@ -78,8 +90,6 @@ function mousePressed()
         noStroke();
         textAlign(CENTER, CENTER);
         text(targetLabel, mouseX, mouseY);
-        wave.freq(notes[targetLabel]);
-        env.play();
     }
     else if(state=="prediction")
     {
@@ -103,18 +113,6 @@ function gotResults(error,results)
     noStroke();
     textAlign(CENTER, CENTER);
 
-    env = new p5.Envelope();
-    env.setADSR(0.05, 0.1, 0.5, 1);
-    env.setRange(1.2, 0);
-
-    wave = new p5.Oscillator();
-
-    wave.setType('sine');
-    wave.start();
-    wave.freq(440);
-    wave.amp(env);
-
     let label=results[0].label;
-    wave.freq(notes[label]);
     text(label, mouseX, mouseY);
 }
