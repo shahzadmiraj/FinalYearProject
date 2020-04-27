@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59227322-d5b1-4ddd-a39d-b32731f6adaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TrainYourOwnNeuralNetwork/model/model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainYourOwnNeuralNetwork/model/model.weights.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainYourOwnNeuralNetwork/model/model_meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loadvieoTesingFile/scriptJava.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loadvieoTesingFile/tesingLoading.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/videos/F1.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrainYourOwnNeuralNetwork/TrainModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/TrainYourOwnNeuralNetwork/TrainModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,26 +53,35 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/loadvieoTesingFile" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.karateca.jstoolbox.config.JsToolboxConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/loadvieoTesingFile" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/videos" />
       <recent name="$PROJECT_DIR$/TrainYourOwnNeuralNetwork/RawData" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.tesingLoading.html?_ijt=3p39tioa4kpo8kfrk6eqic8dvi">
     <configuration name="index.html?_ijt=4493b7g38m4jkhblrop6cfg10f" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FinalYearProject/TrainYourOwnNeuralNetwork/index.html?_ijt=4493b7g38m4jkhblrop6cfg10f" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="tesingLoading.html?_ijt=3p39tioa4kpo8kfrk6eqic8dvi" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FinalYearProject/loadvieoTesingFile/tesingLoading.html?_ijt=3p39tioa4kpo8kfrk6eqic8dvi" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.tesingLoading.html?_ijt=3p39tioa4kpo8kfrk6eqic8dvi" />
         <item itemvalue="JavaScript Debug.index.html?_ijt=4493b7g38m4jkhblrop6cfg10f" />
       </list>
     </recent_temporary>
@@ -91,7 +100,9 @@
       <workItem from="1587807387968" duration="8947000" />
       <workItem from="1587880623227" duration="1660000" />
       <workItem from="1587886100030" duration="2247000" />
-      <workItem from="1587893981649" duration="293000" />
+      <workItem from="1587893981649" duration="774000" />
+      <workItem from="1588010112029" duration="1019000" />
+      <workItem from="1588013646154" duration="5554000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1587807137835</created>
@@ -128,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587887272529</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="save model of training model by using mouse">
+      <created>1587894296417</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587894296417</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,17 +158,18 @@
     <MESSAGE value="got points by using pose net" />
     <MESSAGE value="learning of training model by using mouse" />
     <MESSAGE value="save data of training model by using mouse" />
-    <option name="LAST_COMMIT_MESSAGE" value="save data of training model by using mouse" />
+    <MESSAGE value="save model of training model by using mouse" />
+    <option name="LAST_COMMIT_MESSAGE" value="save model of training model by using mouse" />
   </component>
   <component name="WindowStateProjectService">
     <state x="280" y="39" key="#CLI_Interpreters" timestamp="1587829114019">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="280" y="39" key="#CLI_Interpreters/0.23.1280.709@0.23.1280.709" timestamp="1587829114019" />
-    <state x="292" y="43" key="#Deployment" timestamp="1587829848737">
+    <state x="292" y="43" key="#Deployment" timestamp="1588010742267">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="292" y="43" key="#Deployment/0.23.1280.709@0.23.1280.709" timestamp="1587829848737" />
+    <state x="292" y="43" key="#Deployment/0.23.1280.709@0.23.1280.709" timestamp="1588010742267" />
     <state x="348" y="70" key="#Options" timestamp="1587829771450">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
@@ -159,10 +178,10 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="384" y="27" key="#PHP/0.23.1280.709@0.23.1280.709" timestamp="1587829125923" />
-    <state x="104" y="50" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587829741524">
+    <state x="104" y="50" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588010758097">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="104" y="50" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.709@0.23.1280.709" timestamp="1587829741524" />
+    <state x="104" y="50" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.709@0.23.1280.709" timestamp="1588010758097" />
     <state x="379" y="303" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587807650372">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
@@ -171,18 +190,22 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="427" y="100" key="#com.intellij.ide.macro.MacrosDialog/0.23.1280.709@0.23.1280.709" timestamp="1587829184604" />
-    <state x="378" y="164" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1587826418082">
+    <state x="378" y="164" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1588010682008">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="378" y="164" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.23.1280.709@0.23.1280.709" timestamp="1587826418082" />
+    <state x="378" y="164" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.23.1280.709@0.23.1280.709" timestamp="1588010682008" />
     <state x="398" y="79" key="#index.php" timestamp="1587829074558">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="398" y="79" key="#index.php/0.23.1280.709@0.23.1280.709" timestamp="1587829074558" />
-    <state x="218" y="23" key="CommitChangelistDialog2" timestamp="1587887272317">
+    <state x="218" y="23" key="CommitChangelistDialog2" timestamp="1587894296236">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="218" y="23" key="CommitChangelistDialog2/0.23.1280.709@0.23.1280.709" timestamp="1587887272317" />
+    <state x="218" y="23" key="CommitChangelistDialog2/0.23.1280.709@0.23.1280.709" timestamp="1587894296236" />
+    <state x="100" y="123" width="1080" height="509" key="DiffContextDialog" timestamp="1588010715985">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state x="100" y="123" width="1080" height="509" key="DiffContextDialog/0.23.1280.709@0.23.1280.709" timestamp="1588010715985" />
     <state width="1238" height="108" key="GridCell.Tab.0.bottom" timestamp="1587829570515">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
@@ -207,14 +230,14 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="463" y="308" key="NewPhpFileDialog/0.23.1280.709@0.23.1280.709" timestamp="1587826624894" />
-    <state x="149" y="23" width="982" height="709" key="SettingsEditor" timestamp="1587826451231">
+    <state x="237" y="23" width="982" height="709" key="SettingsEditor" timestamp="1588010715598">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="149" y="23" width="982" height="709" key="SettingsEditor/0.23.1280.709@0.23.1280.709" timestamp="1587826451231" />
-    <state x="240" y="117" key="Vcs.Push.Dialog.v2" timestamp="1587887274379">
+    <state x="237" y="23" width="982" height="709" key="SettingsEditor/0.23.1280.709@0.23.1280.709" timestamp="1588010715598" />
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2" timestamp="1587894298264">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="240" y="117" key="Vcs.Push.Dialog.v2/0.23.1280.709@0.23.1280.709" timestamp="1587887274379" />
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2/0.23.1280.709@0.23.1280.709" timestamp="1587894298264" />
     <state x="512" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587829164567">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
