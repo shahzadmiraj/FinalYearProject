@@ -52,6 +52,8 @@ function SaveDataset()
 {
     //save model
     brain.saveData()
+    startAndStopButton.html('Start collection Dataset');
+    state = "waiting";
 }
 function functionStartAndStopRecording()
 {
