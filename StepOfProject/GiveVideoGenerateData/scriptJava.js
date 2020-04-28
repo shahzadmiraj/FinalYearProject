@@ -8,12 +8,33 @@ let button;
 let brain; //store  neuro network
 let targetLabel;
 let state='waiting';
+let startAndStopButton;
+let saveModelButton;
+
+function ButtonCreatesAtTopOfPage(text)
+{
+    let btn = createButton(text);
+    let col = color(25, 23, 200, 100);
+    btn.style('background-color', col);
+    btn.style('width', '900px');
+    btn.style('height', '5vh');
+    btn.style('font-size', '100%');
+    return btn;
+}
+function  preload() {
+    button=ButtonCreatesAtTopOfPage("play video");
+    startAndStopButton=ButtonCreatesAtTopOfPage("Start collection Dataset");
+    saveModelButton=ButtonCreatesAtTopOfPage("Save DataSet");
+}
+
 function setup()
 {
-   createCanvas(900,750);
+
+   createCanvas(900,600);
     video = createVideo("../../videos/F1.mp4");
-    button = createButton('play');
+    startAndStopButton.mousePressed(functionStartAndStopRecording);
     button.mousePressed(toggleVid);
+    saveModelButton.mousePressed(SaveDataset);
     video.hide();
     poseNet=ml5.poseNet(video,modelLoad);
     poseNet.on('pose',getPoses);
@@ -27,31 +48,30 @@ function setup()
     brain = ml5.neuralNetwork(options);
 
 }
+function SaveDataset()
+{
+    //save model
+    brain.saveData()
+}
+function functionStartAndStopRecording()
+{
+    //start and Stop video recording and collection data Set
+    if(state=="waiting")
+    {
 
+        state = "collection";
+        startAndStopButton.html('Stop collection Dataset');
+    }
+    else
+    {
+        state="waiting";
+        startAndStopButton.html('Start collection Dataset');
+    }
+}
 function keyPressed()
 {
-    if(key=="s")
-    {
-        brain.saveData()
-    }
-    else {
-
         targetLabel = key;
         console.log(targetLabel);
-        setTimeout(function () {
-            console.log("collecting");
-            state = "collection";
-
-
-            setTimeout(function () {
-                console.log("not collecting");
-                state = "waiting";
-            }, 10000);
-
-
-        }, 10000);
-    }
-
 }
 
 
@@ -59,7 +79,7 @@ function toggleVid() {
     // plays or pauses the video depending on current state
     if (playing) {
         video.pause();
-        button.html('play');
+        button.html('play video');
     } else {
         video.loop();
         button.html('pause');
