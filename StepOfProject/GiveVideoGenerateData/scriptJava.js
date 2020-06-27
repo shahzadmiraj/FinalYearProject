@@ -6,11 +6,11 @@ let skeleton;
 let playing = false;
 let button;
 let brain; //store  neuro network
-let targetLabel;
+let targetLabel="c";
 let state='waiting';
 let startAndStopButton;
 let saveModelButton;
-
+let inputNames = ["noseX","noseY","leftEyeX","leftEyeY","rightEyeX","rightEyeY", "leftEarX","leftEarY", "rightEarX","rightEarY", "leftShoulderX","leftShoulderY", "rightShoulderX","rightShoulderY", "leftElbowX","leftElbowY","rightElbowX","rightElbowY","leftWristX","leftWristY","rightWristX","rightWristY","leftHipX","leftHipY","rightHipX","rightHipY","leftKneeX","leftKneeY","rightKneeX","rightKneeY","leftAnkleX","leftAnkleY","rightAnkleX","rightAnkleY"]
 function ButtonCreatesAtTopOfPage(text)
 {
     let btn = createButton(text);
@@ -40,8 +40,8 @@ function setup()
     poseNet.on('pose',getPoses);
 
     let options = {
-        inputs: 34,
-        outputs: 4,
+        inputs: inputNames,
+        outputs: ['label'],
         task: 'classification',
         debug: true
     }
@@ -109,6 +109,9 @@ function getPoses(poses)
         }
         let taget=[targetLabel];
         brain.addData(inputs,taget);
+        //console.log(pose.keypoints);
+       // console.log(inputs);
+
     }
 }
 function draw()
@@ -118,11 +121,17 @@ function draw()
     image(video,0,0,video.width,video.height);
     if(pose&&(state=="collection"))
     {
+       // console.log(pose);
+        let inputs= {
+        inputNames:1
+        }
 
-        for(let i=0;i<pose.keypoints.length;i++)
+        for(let i=0;i<pose.keypoints.length;i++)//15
         {
             let x=pose.keypoints[i].position.x;
             let y=pose.keypoints[i].position.y;
+
+
             fill(0,0,200);
             ellipse(x,y,16,16);
           //  console.log(pose.keypoints[i].part+"x="+x+" y="+y);
