@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="59227322-d5b1-4ddd-a39d-b32731f6adaa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StepOfProject/GiveVideoGenerateData/scriptJava.js" beforeDir="false" afterPath="$PROJECT_DIR$/StepOfProject/GiveVideoGenerateData/scriptJava.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +121,8 @@
       <workItem from="1588224621703" duration="2970000" />
       <workItem from="1588280052455" duration="2618000" />
       <workItem from="1588318228708" duration="282000" />
+      <workItem from="1593245254375" duration="43000" />
+      <workItem from="1593245325402" duration="70000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1587807137835</created>
@@ -228,6 +229,10 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="384" y="27" key="#PHP/0.23.1280.709@0.23.1280.709" timestamp="1587829125923" />
+    <state x="240" y="23" key="#Plugins" timestamp="1593245398548">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state x="240" y="23" key="#Plugins/0.23.1280.709@0.23.1280.709" timestamp="1593245398548" />
     <state x="104" y="50" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588010758097">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
