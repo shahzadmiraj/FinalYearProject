@@ -34,7 +34,7 @@ function setup()
    createCanvas(1020,1200);
    background(51);
     video = createVideo("../../videos/Bicep_Curls.mp4");//Bicep_Curls.mp4,"../../videos/Bicep_Curls.mp4"
-   // video =  createCapture(VIDEO);
+   //video =  createCapture(VIDEO);
 
     //video.size(300,200)
     startAndStopButton.mousePressed(functionStartAndStopRecording);
