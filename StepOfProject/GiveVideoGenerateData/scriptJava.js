@@ -10,6 +10,7 @@ let targetLabel="c";
 let state='waiting';
 let startAndStopButton;
 let saveModelButton;
+let text;
 let inputNames = ["noseX","noseY","leftEyeX","leftEyeY","rightEyeX","rightEyeY", "leftEarX","leftEarY", "rightEarX","rightEarY", "leftShoulderX","leftShoulderY", "rightShoulderX","rightShoulderY", "leftElbowX","leftElbowY","rightElbowX","rightElbowY","leftWristX","leftWristY","rightWristX","rightWristY","leftHipX","leftHipY","rightHipX","rightHipY","leftKneeX","leftKneeY","rightKneeX","rightKneeY","leftAnkleX","leftAnkleY","rightAnkleX","rightAnkleY"]
 function ButtonCreatesAtTopOfPage(text)
 {
@@ -29,13 +30,17 @@ function  preload() {
 
 function setup()
 {
+    text=createElement('h1', 'right elbow');
+   createCanvas(1020,1200);
+   background(51);
+    video = createVideo("../../videos/Bicep_Curls.mp4");//Bicep_Curls.mp4,"../../videos/Bicep_Curls.mp4"
+   // video =  createCapture(VIDEO);
 
-   createCanvas(900,600);
-    video = createVideo("../../videos/F1.mp4");
+    //video.size(300,200)
     startAndStopButton.mousePressed(functionStartAndStopRecording);
     button.mousePressed(toggleVid);
     saveModelButton.mousePressed(SaveDataset);
-    video.hide();
+  //  video.hide();
     poseNet=ml5.poseNet(video,modelLoad);
     poseNet.on('pose',getPoses);
 
@@ -114,18 +119,40 @@ function getPoses(poses)
 
     }
 }
+
+
+var findAngle = function (ax, ay, bx, by) {
+    var aDotb=(ax*bx)+(ay*by);
+    var magnitudeofA=Math.abs(Math.sqrt((ax*ax)+(ay*ay)));
+    var magnitudeofB=Math.abs(Math.sqrt((bx*bx)+(by*by)));
+    var cosAngle=aDotb/(magnitudeofA*magnitudeofB);
+    var pi=22/7;
+    return Math.acos(cosAngle)* (180/pi);
+}
+var findANGLEComplete= function(ax, ay, bx, by)
+{
+    var angleDeg = Math.atan2(by - ay, bx - ax) * 180 / Math.PI;
+    return angleDeg;
+}
+
 function draw()
 {
-    translate(video.width,0);
-    scale(-1,1);
-    image(video,0,0,video.width,video.height);
+   //translate(video.width,0);
+   //scale(-1,1);
+    var xScale=100;
+
+    image(video,0-xScale,0,video.width,video.height);
     if(pose&&(state=="collection"))
     {
        // console.log(pose);
         let inputs= {
         inputNames:1
         }
+       // var RightElbowAngle = findAngle(12,5,12,10);
 
+       var Angle_Between_RightWrist_RightShoulder = findAngle(pose.rightWrist.x, pose.rightWrist.y, pose.rightShoulder.x, pose.rightShoulder.y);
+        var Angle_Between_RightElbow_RightShoulder = findAngle(pose.rightElbow.x, pose.rightElbow.y, pose.rightShoulder.x, pose.rightShoulder.y);
+        text.html("A="+Math.floor(Angle_Between_RightWrist_RightShoulder)+" B="+Math.floor(Angle_Between_RightElbow_RightShoulder));
         for(let i=0;i<pose.keypoints.length;i++)//15
         {
             let x=pose.keypoints[i].position.x;
@@ -133,7 +160,9 @@ function draw()
 
 
             fill(0,0,200);
-            ellipse(x,y,16,16);
+            ellipse(x-xScale,y,16,16);
+
+
           //  console.log(pose.keypoints[i].part+"x="+x+" y="+y);
         }
         for(let i=0;i<skeleton.length;i++)
@@ -142,7 +171,7 @@ function draw()
             let b=skeleton[i][1];
             strokeWeight(2);
             stroke(200);
-            line(a.position.x,a.position.y,b.position.x,b.position.y);
+            line(a.position.x-xScale,a.position.y,b.position.x-xScale,b.position.y);
         }
 
 
