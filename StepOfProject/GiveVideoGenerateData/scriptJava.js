@@ -121,19 +121,6 @@ function getPoses(poses)
 }
 
 
-var findAngle = function (ax, ay, bx, by) {
-    var aDotb=(ax*bx)+(ay*by);
-    var magnitudeofA=Math.abs(Math.sqrt((ax*ax)+(ay*ay)));
-    var magnitudeofB=Math.abs(Math.sqrt((bx*bx)+(by*by)));
-    var cosAngle=aDotb/(magnitudeofA*magnitudeofB);
-    var pi=22/7;
-    return Math.acos(cosAngle)* (180/pi);
-}
-var findANGLEComplete= function(ax, ay, bx, by)
-{
-    var angleDeg = Math.atan2(by - ay, bx - ax) * 180 / Math.PI;
-    return angleDeg;
-}
 
 function draw()
 {
@@ -150,9 +137,12 @@ function draw()
         }
        // var RightElbowAngle = findAngle(12,5,12,10);
 
-       var Angle_Between_RightWrist_RightShoulder = findAngle(pose.rightWrist.x, pose.rightWrist.y, pose.rightShoulder.x, pose.rightShoulder.y);
-        var Angle_Between_RightElbow_RightShoulder = findAngle(pose.rightElbow.x, pose.rightElbow.y, pose.rightShoulder.x, pose.rightShoulder.y);
-        text.html("A="+Math.floor(Angle_Between_RightWrist_RightShoulder)+" B="+Math.floor(Angle_Between_RightElbow_RightShoulder));
+       //var Angle_Between_RightWrist_RightShoulder = findAngle(pose.rightWrist.x, pose.rightWrist.y, pose.rightShoulder.x, pose.rightShoulder.y);
+        //var Angle_Between_RightElbow_RightShoulder = findAngle(pose.rightElbow.x, pose.rightElbow.y, pose.rightShoulder.x, pose.rightShoulder.y);
+
+        var Angle_Between_RightWrist_RightShoulder= angle(pose.rightWrist.x, pose.rightWrist.y,pose.rightElbow.x, pose.rightElbow.y,pose.rightShoulder.x, pose.rightShoulder.y)
+
+        text.html("A="+Math.floor(Angle_Between_RightWrist_RightShoulder[0])+"B="+Math.floor(Angle_Between_RightWrist_RightShoulder[1])+"C="+Math.floor(Angle_Between_RightWrist_RightShoulder[2]));
         for(let i=0;i<pose.keypoints.length;i++)//15
         {
             let x=pose.keypoints[i].position.x;

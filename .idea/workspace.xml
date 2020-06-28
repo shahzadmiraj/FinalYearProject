@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59227322-d5b1-4ddd-a39d-b32731f6adaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/videos/Bicep_Curls.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StepOfProject/GiveVideoGenerateData/calculation/angleCalculation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StepOfProject/GiveVideoGenerateData/calculation/fixangles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StepOfProject/GiveVideoGenerateData/scriptJava.js" beforeDir="false" afterPath="$PROJECT_DIR$/StepOfProject/GiveVideoGenerateData/scriptJava.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StepOfProject/GiveVideoGenerateData/tesingLoading.html" beforeDir="false" afterPath="$PROJECT_DIR$/StepOfProject/GiveVideoGenerateData/tesingLoading.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +129,8 @@
       <workItem from="1593245325402" duration="13539000" />
       <workItem from="1593268375747" duration="6324000" />
       <workItem from="1593363463711" duration="440000" />
+      <workItem from="1593368923644" duration="626000" />
+      <workItem from="1593370590600" duration="1964000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1587807137835</created>
@@ -207,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593245416494</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Save  Dataset on recorded video">
+      <created>1593368946081</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1593368946081</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,10 +275,10 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="398" y="79" key="#index.php/0.23.1280.709@0.23.1280.709" timestamp="1587829074558" />
-    <state x="218" y="23" key="CommitChangelistDialog2" timestamp="1593245416097">
+    <state x="218" y="23" key="CommitChangelistDialog2" timestamp="1593368945107">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="218" y="23" key="CommitChangelistDialog2/0.23.1280.709@0.23.1280.709" timestamp="1593245416097" />
+    <state x="218" y="23" key="CommitChangelistDialog2/0.23.1280.709@0.23.1280.709" timestamp="1593368945107" />
     <state x="100" y="123" width="1080" height="509" key="DiffContextDialog" timestamp="1588010715985">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
@@ -334,10 +343,10 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="237" y="23" width="982" height="709" key="SettingsEditor/0.23.1280.709@0.23.1280.709" timestamp="1588010715598" />
-    <state x="240" y="117" key="Vcs.Push.Dialog.v2" timestamp="1593245419041">
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2" timestamp="1593368950534">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="240" y="117" key="Vcs.Push.Dialog.v2/0.23.1280.709@0.23.1280.709" timestamp="1593245419041" />
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2/0.23.1280.709@0.23.1280.709" timestamp="1593368950534" />
     <state x="512" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587829164567">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
