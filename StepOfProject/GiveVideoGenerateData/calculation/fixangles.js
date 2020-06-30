@@ -11,3 +11,6 @@ var findANGLEComplete= function(ax, ay, bx, by)
     var angleDeg = Math.atan2(by - ay, bx - ax) * 180 / Math.PI;
     return angleDeg;
 }
+var standingposition=function () {
+
+}

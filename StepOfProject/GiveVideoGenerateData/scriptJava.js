@@ -12,6 +12,8 @@ let startAndStopButton;
 let saveModelButton;
 let text;
 let inputNames = ["noseX","noseY","leftEyeX","leftEyeY","rightEyeX","rightEyeY", "leftEarX","leftEarY", "rightEarX","rightEarY", "leftShoulderX","leftShoulderY", "rightShoulderX","rightShoulderY", "leftElbowX","leftElbowY","rightElbowX","rightElbowY","leftWristX","leftWristY","rightWristX","rightWristY","leftHipX","leftHipY","rightHipX","rightHipY","leftKneeX","leftKneeY","rightKneeX","rightKneeY","leftAnkleX","leftAnkleY","rightAnkleX","rightAnkleY"]
+
+let accuracyOfPoseNet=0;
 function ButtonCreatesAtTopOfPage(text)
 {
     let btn = createButton(text);
@@ -33,8 +35,8 @@ function setup()
     text=createElement('h1', 'right elbow');
    createCanvas(1020,1200);
    background(51);
-    video = createVideo("../../videos/Bicep_Curls.mp4");//Bicep_Curls.mp4,"../../videos/Bicep_Curls.mp4"
-   //video =  createCapture(VIDEO);
+   //video = createVideo("../../videos/Bicep_Curls.mp4");//Bicep_Curls.mp4,"../../videos/Bicep_Curls.mp4"
+   video =  createCapture(VIDEO);
 
     //video.size(300,200)
     startAndStopButton.mousePressed(functionStartAndStopRecording);
@@ -126,7 +128,7 @@ function draw()
 {
    //translate(video.width,0);
    //scale(-1,1);
-    var xScale=100;
+    var xScale=0;
 
     image(video,0-xScale,0,video.width,video.height);
     if(pose&&(state=="collection"))
@@ -135,14 +137,46 @@ function draw()
         let inputs= {
         inputNames:1
         }
-       // var RightElbowAngle = findAngle(12,5,12,10);
 
-       //var Angle_Between_RightWrist_RightShoulder = findAngle(pose.rightWrist.x, pose.rightWrist.y, pose.rightShoulder.x, pose.rightShoulder.y);
-        //var Angle_Between_RightElbow_RightShoulder = findAngle(pose.rightElbow.x, pose.rightElbow.y, pose.rightShoulder.x, pose.rightShoulder.y);
+        var textString="";
 
-        var Angle_Between_RightWrist_RightShoulder= angle(pose.rightWrist.x, pose.rightWrist.y,pose.rightElbow.x, pose.rightElbow.y,pose.rightShoulder.x, pose.rightShoulder.y)
 
-        text.html("A="+Math.floor(Angle_Between_RightWrist_RightShoulder[0])+"B="+Math.floor(Angle_Between_RightWrist_RightShoulder[1])+"C="+Math.floor(Angle_Between_RightWrist_RightShoulder[2]));
+        if(((pose.rightHip.confidence*100)>accuracyOfPoseNet)&&(pose.rightShoulder.confidence*100>accuracyOfPoseNet)&&(pose.rightElbow.confidence*100>accuracyOfPoseNet)&&(pose.rightWrist.confidence*100>accuracyOfPoseNet))
+        {
+            var standing = findANGLEComplete(pose.rightHip.x, pose.rightHip.y, pose.rightShoulder.x, pose.rightShoulder.y)
+            if ((standing < -90) && (standing > -100))
+            {
+                //user is  staight position
+
+                //textString="Good Standing position=" + standing+'",";
+
+                var Angle_Between_RightWrist_RightShoulder= Math.floor(angle(pose.rightWrist.x, pose.rightWrist.y,pose.rightElbow.x, pose.rightElbow.y,pose.rightShoulder.x, pose.rightShoulder.y)[1])
+
+                if((Angle_Between_RightWrist_RightShoulder>170)&&(Angle_Between_RightWrist_RightShoulder<90))
+                {
+                    //user doing arm excercise properly
+                    textString+="elbow angle"+Angle_Between_RightWrist_RightShoulder+",";
+
+
+                }
+                else
+                {
+                    //user is not doing arm excercise properly
+
+                }
+                textString=Angle_Between_RightWrist_RightShoulder;
+            } else
+                {
+                    //user is not staight position
+                    textString="bad,H=" + standing;
+            }
+        }
+        else
+        {
+            //posenet accuracy is not good
+            textString="Pose Net accuracy not good";
+        }
+        text.html(textString);
         for(let i=0;i<pose.keypoints.length;i++)//15
         {
             let x=pose.keypoints[i].position.x;
