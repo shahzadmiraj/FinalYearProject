@@ -14,17 +14,20 @@ function draw()
             inputNames:1
         }
 
+
         var textString="";
-
-
         if((pose.rightHip.confidence*100>accuracyOfPoseNet)&&(pose.rightShoulder.confidence*100>accuracyOfPoseNet)&&(pose.rightElbow.confidence*100>accuracyOfPoseNet)&&(pose.rightWrist.confidence*100>accuracyOfPoseNet))
         {
+            //good accuracy os pose net
+
             var standing = findANGLEComplete(pose.rightHip.x, pose.rightHip.y, pose.rightShoulder.x, pose.rightShoulder.y)
             if ((standing < -90) && (standing > -100))
             {
                 //user is  staight position
 
                 //textString="Good Standing position=" + standing+'",";
+
+                
 
                 var Angle_Between_RightWrist_RightShoulder= Math.floor(angle(pose.rightWrist.x, pose.rightWrist.y,pose.rightElbow.x, pose.rightElbow.y,pose.rightShoulder.x, pose.rightShoulder.y)[1]);
 
@@ -33,15 +36,13 @@ function draw()
                     //user doing arm excercise properly
                     textString+="elbow angle="+Angle_Between_RightWrist_RightShoulder+",";
 
-
                 }
                 else
                 {
                     //user is not doing arm excercise properly
                     textString+="elbow angle out="+Angle_Between_RightWrist_RightShoulder+",";
-
                 }
-                textString=Angle_Between_RightWrist_RightShoulder;
+
             } else
             {
                 //user is not staight position
