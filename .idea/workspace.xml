@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59227322-d5b1-4ddd-a39d-b32731f6adaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/StepOfProject/GiveVideoGenerateData/RightSideDumbellModel/DumbellAI.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StepOfProject/GiveDataAndGenerateModel/LoadscriptJava.js" beforeDir="false" afterPath="$PROJECT_DIR$/StepOfProject/GiveDataAndGenerateModel/LoadscriptJava.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StepOfProject/GiveModelAndPredict/Model.js" beforeDir="false" afterPath="$PROJECT_DIR$/StepOfProject/GiveModelAndPredict/Model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StepOfProject/GiveVideoGenerateData/scriptJava.js" beforeDir="false" afterPath="$PROJECT_DIR$/StepOfProject/GiveVideoGenerateData/scriptJava.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StepOfProject/GiveVideoGenerateData/tesingLoading.html" beforeDir="false" afterPath="$PROJECT_DIR$/StepOfProject/GiveVideoGenerateData/tesingLoading.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml5.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ml5.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p5.js" beforeDir="false" afterPath="$PROJECT_DIR$/p5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StepOfProject/GiveVideoGenerateData/RightSideDumbellModel/DumbellAI.js" beforeDir="false" afterPath="$PROJECT_DIR$/StepOfProject/GiveVideoGenerateData/RightSideDumbellModel/DumbellAI.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +131,7 @@
       <workItem from="1593422632358" duration="1068000" />
       <workItem from="1593425491147" duration="513000" />
       <workItem from="1593426962812" duration="1768000" />
-      <workItem from="1593506528424" duration="5794000" />
+      <workItem from="1593506528424" duration="9801000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1587807137835</created>
@@ -272,7 +266,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593517119329</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="posenet">
+      <created>1593518640297</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1593518640297</updated>
+    </task>
+    <task id="LOCAL-00021" summary="posenet">
+      <created>1593518788906</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1593518788906</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,10 +344,10 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="398" y="79" key="#index.php/0.23.1280.709@0.23.1280.709" timestamp="1587829074558" />
-    <state x="218" y="23" key="CommitChangelistDialog2" timestamp="1593517119159">
+    <state x="87" y="23" key="CommitChangelistDialog2" timestamp="1593518788735">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="218" y="23" key="CommitChangelistDialog2/0.23.1280.709@0.23.1280.709" timestamp="1593517119159" />
+    <state x="87" y="23" key="CommitChangelistDialog2/0.23.1280.709@0.23.1280.709" timestamp="1593518788735" />
     <state x="100" y="123" width="1080" height="509" key="DiffContextDialog" timestamp="1588010715985">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
@@ -404,10 +412,10 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="237" y="23" width="982" height="709" key="SettingsEditor/0.23.1280.709@0.23.1280.709" timestamp="1588010715598" />
-    <state x="240" y="117" key="Vcs.Push.Dialog.v2" timestamp="1593517135433">
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2" timestamp="1593518791138">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="240" y="117" key="Vcs.Push.Dialog.v2/0.23.1280.709@0.23.1280.709" timestamp="1593517135433" />
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2/0.23.1280.709@0.23.1280.709" timestamp="1593518791138" />
     <state x="512" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593517127330">
       <screen x="0" y="23" width="1280" height="709" />
     </state>

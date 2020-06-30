@@ -1,5 +1,8 @@
 
 let accuracyOfPoseNet=1;
+var Previouse_Angle_Between_RightWrist_RightShoulder=170;
+var stepDirection="UpWordDirection";
+var InitialMovement="YesInitialMovement";
 function draw()
 {
     //translate(video.width,0);
@@ -14,7 +17,6 @@ function draw()
             inputNames:1
         }
 
-
         var textString="";
         if((pose.rightHip.confidence*100>accuracyOfPoseNet)&&(pose.rightShoulder.confidence*100>accuracyOfPoseNet)&&(pose.rightElbow.confidence*100>accuracyOfPoseNet)&&(pose.rightWrist.confidence*100>accuracyOfPoseNet))
         {
@@ -26,27 +28,75 @@ function draw()
                 //user is  staight position
 
                 //textString="Good Standing position=" + standing+'",";
+                var ArmISStill = findANGLEComplete(pose.rightElbow.x, pose.rightElbow.y, pose.rightShoulder.x, pose.rightShoulder.y)
 
-                
-
-                var Angle_Between_RightWrist_RightShoulder= Math.floor(angle(pose.rightWrist.x, pose.rightWrist.y,pose.rightElbow.x, pose.rightElbow.y,pose.rightShoulder.x, pose.rightShoulder.y)[1]);
-
-                if((Angle_Between_RightWrist_RightShoulder>170)&&(Angle_Between_RightWrist_RightShoulder<90))
+                if((ArmISStill < -82) && (ArmISStill > -105))
                 {
-                    //user doing arm excercise properly
-                    textString+="elbow angle="+Angle_Between_RightWrist_RightShoulder+",";
+                    //arm is still there position
+
+                    textString+=",good ARM,";
+
+                      if(stepDirection=="UpWordDirection")
+                      {
+                          // moving arm upword direction
+
+                          var Angle_Between_RightWrist_RightShoulder= Math.floor(angle(pose.rightWrist.x, pose.rightWrist.y,pose.rightElbow.x, pose.rightElbow.y,pose.rightShoulder.x, pose.rightShoulder.y)[1]);
+
+                          if(InitialMovement=="YesInitialMovement")
+                          {
+                              // initial point set to 170 angle first
+
+                              if((Angle_Between_RightWrist_RightShoulder>170)&&(Angle_Between_RightWrist_RightShoulder<160))
+                              {
+                                  //user doing arm excercise properly
+                                  textString+=",Initial point set,";
+                                  InitialMovement="NoInitialMovement";
+                              }
+                              else
+                              {
+                                  //user is not doing arm excercise properly
+                                  textString+=",Please Set initial position,";
+                              }
+
+                          }
+                          else
+                          {
+                              // not initial point set to 170 angle first
+                              if((Angle_Between_RightWrist_RightShoulder>170)&&(Angle_Between_RightWrist_RightShoulder<90))
+                              {
+                                  //user doing arm excercise properly
+
+                              }
+                              else
+                              {
+                                  //user is not doing arm excercise properly
+                              }
+
+                          }
+
+                      }
+                      else
+                      {
+
+                          // moving arm downword direction
+                          textString+=",moving arm downword direction ,";
+
+                      }
 
                 }
                 else
                 {
-                    //user is not doing arm excercise properly
-                    textString+="elbow angle out="+Angle_Between_RightWrist_RightShoulder+",";
+                    //user arm is inword or outword
+                    textString+="ARM is moving inword or outword";
+
                 }
+
+
 
             } else
             {
                 //user is not staight position
-                textString="bad Standing position=" + standing;
+                textString=",bad Standing position,";
             }
         }
         else
@@ -64,8 +114,6 @@ function draw()
             fill(0,0,200);
             ellipse(x-xScale,y,16,16);
 
-
-            //  console.log(pose.keypoints[i].part+"x="+x+" y="+y);
         }
         for(let i=0;i<skeleton.length;i++)
         {
