@@ -38,7 +38,7 @@ function LoadDataReady()
 
 function finishedLoadedData()
 {
-    console.log('Model has Trained');
+    console.log('RightSideDumbellModel has Trained');
     brain.save();
 }
 

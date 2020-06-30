@@ -25,16 +25,16 @@ function setup()
     }
     brain = ml5.neuralNetwork(options);
     const modelInfo = {
-        model: 'Model/model.json',
-        metadata: 'Model/model_meta.json',
-        weights: 'Model/model.weights.bin',
+        model: 'RightSideDumbellModel/model.json',
+        metadata: 'RightSideDumbellModel/model_meta.json',
+        weights: 'RightSideDumbellModel/model.weights.bin',
     };
     brain.load(modelInfo, brainLoaded);
 
 }
 function brainLoaded()
 {
-console.log("brain Model is ready ...");
+console.log("brain RightSideDumbellModel is ready ...");
    classifyPose();
 
 }
