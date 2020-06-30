@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59227322-d5b1-4ddd-a39d-b32731f6adaa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/StepOfProject/GiveVideoGenerateData/scriptJava.js" beforeDir="false" afterPath="$PROJECT_DIR$/StepOfProject/GiveVideoGenerateData/scriptJava.js" afterDir="false" />
-    </list>
+    <list default="true" id="59227322-d5b1-4ddd-a39d-b32731f6adaa" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +128,7 @@
       <workItem from="1593422632358" duration="1068000" />
       <workItem from="1593425491147" duration="513000" />
       <workItem from="1593426962812" duration="1768000" />
-      <workItem from="1593506528424" duration="4643000" />
+      <workItem from="1593506528424" duration="4736000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1587807137835</created>
@@ -251,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593516668948</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="posenet">
+      <created>1593516879477</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1593516879477</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +272,8 @@
     <MESSAGE value="testing posenet on recorded video" />
     <MESSAGE value="Testing create model on recorded video" />
     <MESSAGE value="Save  Dataset on recorded video" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save  Dataset on recorded video" />
+    <MESSAGE value="posenet" />
+    <option name="LAST_COMMIT_MESSAGE" value="posenet" />
   </component>
   <component name="WindowStateProjectService">
     <state x="280" y="39" key="#CLI_Interpreters" timestamp="1587829114019">
@@ -278,6 +284,10 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="292" y="43" key="#Deployment/0.23.1280.709@0.23.1280.709" timestamp="1593425546301" />
+    <state x="517" y="229" key="#Notifications" timestamp="1593516961786">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state x="517" y="229" key="#Notifications/0.23.1280.709@0.23.1280.709" timestamp="1593516961786" />
     <state x="348" y="70" key="#Options" timestamp="1587829771450">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
@@ -310,10 +320,10 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="398" y="79" key="#index.php/0.23.1280.709@0.23.1280.709" timestamp="1587829074558" />
-    <state x="218" y="23" key="CommitChangelistDialog2" timestamp="1593423825255">
+    <state x="218" y="23" key="CommitChangelistDialog2" timestamp="1593516879279">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="218" y="23" key="CommitChangelistDialog2/0.23.1280.709@0.23.1280.709" timestamp="1593423825255" />
+    <state x="218" y="23" key="CommitChangelistDialog2/0.23.1280.709@0.23.1280.709" timestamp="1593516879279" />
     <state x="100" y="123" width="1080" height="509" key="DiffContextDialog" timestamp="1588010715985">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
@@ -378,10 +388,10 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="237" y="23" width="982" height="709" key="SettingsEditor/0.23.1280.709@0.23.1280.709" timestamp="1588010715598" />
-    <state x="240" y="117" key="Vcs.Push.Dialog.v2" timestamp="1593423827814">
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2" timestamp="1593516880832">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="240" y="117" key="Vcs.Push.Dialog.v2/0.23.1280.709@0.23.1280.709" timestamp="1593423827814" />
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2/0.23.1280.709@0.23.1280.709" timestamp="1593516880832" />
     <state x="512" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587829164567">
       <screen x="0" y="23" width="1280" height="709" />
     </state>

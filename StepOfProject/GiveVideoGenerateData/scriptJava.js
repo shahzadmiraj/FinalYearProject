@@ -150,7 +150,7 @@ function draw()
 
                 //textString="Good Standing position=" + standing+'",";
 
-                var Angle_Between_RightWrist_RightShoulder= Math.floor(angle(pose.rightWrist.x, pose.rightWrist.y,pose.rightElbow.x, pose.rightElbow.y,pose.rightShoulder.x, pose.rightShoulder.y)[1])
+                var Angle_Between_RightWrist_RightShoulder= Math.floor(angle(pose.rightWrist.x, pose.rightWrist.y,pose.rightElbow.x, pose.rightElbow.y,pose.rightShoulder.x, pose.rightShoulder.y)[1]);
 
                 if((Angle_Between_RightWrist_RightShoulder>170)&&(Angle_Between_RightWrist_RightShoulder<90))
                 {
