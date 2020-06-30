@@ -155,13 +155,14 @@ function draw()
                 if((Angle_Between_RightWrist_RightShoulder>170)&&(Angle_Between_RightWrist_RightShoulder<90))
                 {
                     //user doing arm excercise properly
-                    textString+="elbow angle"+Angle_Between_RightWrist_RightShoulder+",";
+                    textString+="elbow angle="+Angle_Between_RightWrist_RightShoulder+",";
 
 
                 }
                 else
                 {
                     //user is not doing arm excercise properly
+                    textString+="elbow angle out="+Angle_Between_RightWrist_RightShoulder+",";
 
                 }
                 textString=Angle_Between_RightWrist_RightShoulder;
